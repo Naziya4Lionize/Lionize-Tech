@@ -167,5 +167,23 @@ h1 {
         border-radius: 0px 0px 160px 0px;
         margin-bottom: 20px;
     }
+    .hoverme:hover{
+        border-radius:0px 0px 150px 0px;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+        }
+        .hoverme2:hover{
+            border-radius:0px 0px 150px 150px;
+            -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            transform: scale(0.9);
+            }
+            .hoverme3:hover{
+                border-radius:0px 0px 0px 150px;
+                -webkit-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                transform: scale(0.9);
+                }
   }
     
