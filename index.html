@@ -9,7 +9,7 @@
     $(function() {
         $('.hoverme').hover(function() {
             $(this).siblings().stop().css("filter","blur(6px)");
-            $(this).parent().siblings().stop().css("filter","blur(1px)");
+            $(this).parent().siblings().stop().css("filter","blur(0.2px)");
             $(".gradient-bckgrnd").addClass("hoverme-Changebody-gradient");
             $('#main-heading').addClass('h1-effect');
             $('.makewhite-onhover').addClass('white-text');
@@ -22,7 +22,7 @@
         });
         $('.hoverme2').hover(function() {
             $(this).siblings().stop().css("filter","blur(6px)");
-            $(this).parent().siblings().stop().css("filter","blur(1px)");
+            $(this).parent().siblings().stop().css("filter","blur(0.2px)");
             $(".gradient-bckgrnd").addClass("hoverme2-Changebody-gradient");
             $('#main-heading').addClass('h1-effect');
             $('.makewhite-onhover').addClass('white-text');
@@ -35,7 +35,7 @@
         });
         $('.hoverme3').hover(function() {
             $(this).siblings().stop().css("filter","blur(6px)");
-            $(this).parent().siblings().stop().css("filter","blur(1px)");
+            $(this).parent().siblings().stop().css("filter","blur(0.2px)");
             $(".gradient-bckgrnd").addClass("hoverme3-Changebody-gradient");
             $('#main-heading').addClass('h1-effect');
             $('.makewhite-onhover').addClass('white-text');
@@ -48,6 +48,27 @@
         });
     })
     </script>
+    <script>
+      $(document).ready(function(){
+          $('input[type="checkbox"]').click(function(){
+              if($(this).prop("checked") == true){
+                $('.gradient-bckgrnd').css("filter","invert(100%)");
+                $('section').css("filter","invert(100%)");
+                $('footer').css("filter","invert(100%)");
+                $('#ceo-written').css("filter","invert(100%)");
+                $('#invert-text').css("color", "wheat");
+                
+              }
+              else if($(this).prop("checked") == false){
+                $('.gradient-bckgrnd').css("filter","invert(0%)");
+                $('section').css("filter","invert(0%)");
+                $('footer').css("filter","invert(0%)");
+                $('#ceo-written').css("filter","invert(0%)");
+                $('#invert-text').css("color", "black");
+              }
+          });
+      });
+  </script>
     <link rel="stylesheet" href="CSS/indexcss.css">
     <title>Lionize Technologies Pvt. Ltd.</title>
     <link rel="shortcut icon" type="image/jpg" href="Images/icon.png"/>
@@ -57,23 +78,28 @@
     <header class="text-gray-700 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <img src="MainLogo.png" width="130" height="120" alt="">      
+            <img src="images/MainLogo.png" width="130" height="120" alt="">      
           </a>
           <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
             <a href="/index.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Home</a>
             <a href="/Services.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Services</a>
             <a href="/Industries.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Industries</a>
             <a href="/Products.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Products</a>
+            <a href="/Contact.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Contact</a>
           </nav>
-          <button onclick="" class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-teal-300 rounded text-base mt-4 md:mt-0">Contact
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
+         
+
+        <label class="switch">
+            <input id="dark-mode" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        <!-- <input type="checkbox" onclick="" class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-teal-300 rounded text-base mt-4 md:mt-0">Contact
+            <span class="slider round"></span>
+          </button>--> 
         </div>
       </header>
 
-      <section class="text-gray-700 body-font">
+      <div class="text-gray-700 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="text-center mb-20">
             <h1 id="main-heading">LIONIZE TECHNOLOGIES</h1>
@@ -136,33 +162,33 @@
             </div>
           </div>
          </div>
-      </section>
+        </div>
     </div>
 
-    <section class="text-gray-700 body-font">
+    <div class="text-gray-700 body-font" >
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div class="tab-pane bg-purple pr-8" >
+            <div class="tab-pane bg-purple pr-8" id="ceo-written" >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                 </svg>
                 
                 <p class="leading-relaxed text-lg text-white blockquote">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape 90's cronut +1 kinfolk. Single-origin.</p>
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
-                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
+                <h2 class="font-medium title-font tracking-wider text-sm" style="color: #1EBBA3;">HOLDEN CAULFIELD</h2>
                 <p class="text-gray-500">Senior Product Designer</p>
                 
               </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6" style="margin: 50px;">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6" style="margin: 50px;" id="CEO-PIC">
             <img class="object-cover object-center rounded" alt="hero" src="Images/CEO.jpg" style="border-radius: 30%;">
           </div>
         </div>
-      </section>
+      </div>
 
       <section class="text-gray-700 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="text-center mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4 blue-text">Why Choose US ..??</h1>
-            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Lionize Technologies implements in DevOps methodology, which requires minimal or no human intervention that helps in the progressive transformation of people, process, and technologies.</p>
+            <h2 class="sm:text-3xl text-2xl font-medium text-center title-font mb-4" style="color: #F56565; font-weight: 700;">Why Choose US ..??</h2>
+            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto" id="invert-text">Lionize Technologies implements in DevOps methodology, which requires minimal or no human intervention that helps in the progressive transformation of people, process, and technologies.</p>
           </div>
           <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div class="p-2 sm:w-1/2 w-full">
@@ -222,19 +248,19 @@
           </div>
         </div>
       </section>
-<div class="infinite-gradient" style="height: 15rem;">
+<section class="infinite-gradient" style="height: 14rem;">
     <div class="pt-10" style="text-align: center !important;">
         <h2 class="sm:text-3xl text-2xl font-medium text-center title-font mb-4 white-text">Looking for more ?</h2>
         <p class="leading-relaxed text-base text-white" style="font-family:'Times New Roman', Times, serif; font-size: 1.2rem; ">Learn more about Lionize's products and solutions.</p>
         <button class="flex mx-auto mt-6 text-white border-0 py-2 px-5 bg-indigo-800 focus:outline-none hover:bg-red-500 rounded" style="width: 180px; font-size: 16px;">View Products &nbsp;  &#x279C;</button>
       </div>
-</div>
+    </section>
 
 <footer class="text-gray-700 body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
         <div class="lg:w-1/5 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">COMPANY</h2>
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">COMPANY</h2>
           <nav class="list-none mb-10">
             <li>
               <a class="text-gray-600 hover:text-gray-800">About Us</a>
@@ -252,7 +278,7 @@
         </div>
         
           <div class="lg:w-1/5 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">OUR PRODUCTS</h2>
+            <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">OUR PRODUCTS</h2>
             <nav class="list-none mb-10">
               <li>
                 <a class="text-gray-600 hover:text-gray-800">HMS</a>
@@ -269,7 +295,7 @@
             </nav>
           </div>
           <div class="lg:w-1/5 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">PARTNERS</h2>
+            <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">PARTNERS</h2>
             <nav class="list-none mb-10">
               <li>
                 <a class="text-gray-600 hover:text-gray-800">First Partner</a>
@@ -286,7 +312,7 @@
             </nav>
           </div>
         <div class="lg:w-1/5 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">FAVORITES</h2>
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">FAVORITES</h2>
           <nav class="list-none mb-10">
             <li>
               <a class="text-gray-600 hover:text-gray-800">What is HMS ?</a>
@@ -300,7 +326,7 @@
           </nav>
         </div>
         <div class="lg:w-1/5 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SOLUTIONS BY INDUSTRY</h2>
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">SOLUTIONS BY INDUSTRY</h2>
           <nav class="list-none mb-10">
             <li>
               <a class="text-gray-600 hover:text-gray-800">Finance</a>
