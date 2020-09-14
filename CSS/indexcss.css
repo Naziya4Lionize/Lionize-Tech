@@ -191,6 +191,8 @@ h1 {
     display: inline-block;
     width: 55px;
     height: 24px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
   
   .switch input { 
@@ -244,3 +246,4 @@ h1 {
   .slider.round:before {
     border-radius: 50%;
   }
+
