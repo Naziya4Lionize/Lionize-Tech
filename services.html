@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/indexcss.css">
+    <link rel="stylesheet" href="CSS/servicescss.css">
+    <title>Lionize Technologies Pvt. Ltd.</title>
+    <link rel="shortcut icon" type="image/jpg" href="NewLogo.png"/>
+    <script>
+        $(document).ready(function(){
+            $('input[type="checkbox"]').click(function(){
+                if($(this).prop("checked") == true){
+                    $('.services-bckgrnd').css("background", "linear-gradient(to right, #2E5363, #C88E69)");
+                    $('section').css("filter","invert(100%)");
+                  $('footer').css("filter","invert(100%)");
+                  $('header a').css("color","white");                
+                }
+                else if($(this).prop("checked") == false){
+                    $('.services-bckgrnd').css("background", "white");
+                  $('section').css("filter","invert(0%)");
+                  $('footer').css("filter","invert(0%)"); 
+                  $('header a').css("color","rgb(133, 124, 124)"); 
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="services-bckgrnd">
+        <label class="switch" style="float: right;">
+            <input id="dark-mode" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    <header class="text-gray-700 body-font mb-5 pb-6">
+        <div class="container mx-auto flex flex-wrap pl-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <a href="index.html" style="margin-bottom: 10px;"> <img src="NewLogo.png" width="90" height="100" alt=""> </a>  
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a href="services.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Services</a>
+            <a href="industries.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Industries</a>
+            <a href="products.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Products</a>
+            <a href="contact.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Contact</a>
+          </nav>
+        
+
+        
+        <!-- <input type="checkbox" onclick="" class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-teal-300 rounded text-base mt-4 md:mt-0">Contact
+            <span class="slider round"></span>
+          </button>--> 
+        </div>
+    </header>
+    </div>
+    <section class="text-gray-700 body-font">
+        <div class="container  mx-auto flex flex-wrap">
+          <div class="lg:w-full mx-auto">
+            <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
+              <img alt="gallery" style="filter: blur(3px);" class="w-full object-cover h-full object-center block absolute inset-0" src="servicesBanner.jpg">
+              <div class="text-center relative z-10 w-full" style="z-index: 999; background-color: rgb(0,0,0); background-color: rgba(0,0,0, 0.4); width: 80%; left: 10%;">
+                <span class="inline-block h-1 w-40 rounded bg-white mt-6 mb-4"></span>
+                <div style="font-style: italic; color: white; margin-bottom: 30px; font-size: 20px;"> we provide outsorced</div>
+                <h2 style="color: white; font-size: 60px; line-height: 60px; font-family: pathway 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> IT Services</h2>
+                <div style="font-style: italic; color: white; margin-top: 30px; font-size: 20px;"> for samll and mid-sized business </div>
+                <span class="inline-block h-1 w-40 rounded bg-white mt-6 mb-4"></span>
+                <div class="pb-8"><button class="inline-flex text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded">Contact us</button></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="sm:text-3xl text-2xl font-medium title-font mb-4" style="color: #F56565; font-weight: 700;">OUR PROCESS MANAGED SERVICES</h2>
+                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Lionize Technologies is ready to implements all customer needs by addressing their pain points of various industries with the latest technologies and smart solutions such as IPs and reusable assets. Our Services Includes :-</p>
+                <div class="flex mt-6 justify-center">
+                  <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                </div>
+              </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-50 rounded w-full object-cover object-center mb-6" src="service1.png" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">LEARN MORE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">EnterPrise Architecture</h2>
+                <p class="leading-relaxed text-base">Lionize technologies provide End to End enterprise architectural solutions for various domains across the industries.Lionize Technologies can help you plan and deliver a strong foundation for your technology architecture.</div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-50 rounded w-full object-cover object-center mb-6" src="app-Dev.png" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">LEARN MORE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Application Development</h2>
+                <p class="leading-relaxed text-base">We are having a great experience to develop various industries application development with emerging technologies & solutions.At Lionize, we quickly deliver highly customized, agile products that improve business value.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-50 rounded w-full object-cover object-center mb-6" src="data_manage.png" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">LEARN MORE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Data Management</h2>
+                <p class="leading-relaxed text-base">Lionize technologies provides services to manage data distribution and access with the speed, simplicity, and level of security required to drives the digital transformation.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-50 rounded w-full object-cover object-center mb-6" src="dat_integ.png" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">LEARN MORE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Data Integeration</h2>
+                <p class="leading-relaxed text-base">Lionize Technologies Services uses data to integrate trusted data for analytics, whether your information is multi-cloud, hybrid data integration products integrate all of your data and applications, in batch or real-time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-50 rounded w-full object-cover object-center mb-6" src="data_quali.png" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">LEARN MORE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Data Quality</h2>
+                <p class="leading-relaxed text-base">In any industry, quality data is mandatory to achieve the desired outcome. Lionize Data quality services is well matured to develop solutions and products of data quality.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-50 rounded w-full object-cover object-center mb-6" src="data_anal.png" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">LEARN MORE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Business Analytics</h2>
+                <p class="leading-relaxed text-base">Lionize technologies has extensive experience in terms of duedelegance,coe setups, environment setup, providing solutions of Big Data and data science, use cases segregation and implementations across various industries.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-50 rounded w-full object-cover object-center mb-6" src="datasecu.png" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">LEARN MORE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Security and Privacy</h2>
+                <p class="leading-relaxed text-base">We provide various solutions for data security in terms of archive the data, masking the PROD and Test data for different Business requirements by a pplying industry-standard compliances like PII, PCI, and GDPR, etc.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-50 rounded w-full object-cover object-center mb-6" src="data_virtual.png" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Master </h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Data Virtualization</h2>
+                <p class="leading-relaxed text-base">Data virtualization software platforms view data sources in such an agnostic manner; they have a wide range of use cases. For example, the centralized management aspect can be used to support data governance initiatives or make it easier to test and deploy data-driven business analytics apps.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+            <div class="lg:w-1/5 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">COMPANY</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">About Us</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Leadership</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Testimonials</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Work with Us</a>
+                </li>
+              </nav>
+            </div>
+            
+              <div class="lg:w-1/5 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">OUR PRODUCTS</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">HMS</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Purohit</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Studeor</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Upcoming Products</a>
+                  </li>
+                </nav>
+              </div>
+              <div class="lg:w-1/5 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">PARTNERS</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">First Partner</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Second Partner</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Third Partner</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Fourth Partner</a>
+                  </li>
+                </nav>
+              </div>
+            <div class="lg:w-1/5 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">FAVORITES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">What is HMS ?</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">About Purohit</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">What is Studeor ?</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/5 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">SOLUTIONS BY INDUSTRY</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Finance</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Technology</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Manufacturing</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Insurance</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Healthcare</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Education</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Human Resources</a>
+                </li>
+              </nav>
+            </div>
+    
+          </div>
+        </div>
+        <div class="border-t border-gray-200">
+          <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+            <div class="flex md:flex-no-wrap flex-wrap justify-center md:justify-start">
+              <input class="sm:w-64 w-40 bg-gray-100 rounded sm:mr-4 mr-2 border border-gray-400 focus:outline-none focus:border-purple-500 text-base py-2 px-4" placeholder="Email" type="text">
+              <button class="inline-flex text-white bg-purple-500 border-0 py-4 px-6 focus:outline-none hover:bg-purple-600 rounded">SEND</button>
+              <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">Drop your Email address
+                <br class="lg:block hidden">and we will contact you soon
+              </p>
+            </div>
+            
+            <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="bg-gray-200">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">lionize Technologies (P) ltd © 2019
+              <a href="https://twitter.com/lionizetech" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@lionizetech</a>
+            </p>
+            <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Let's create a new revolution together</span>
+          </div>
+        </div>
+          </footer>
+</body>
