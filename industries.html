@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="jquery-scrollie-master/jquery-scrollie-master/jquery.scrollie.js" ></script>
+    <script src="jquery-scrollie-master/jquery-scrollie-master/jquery.scrollie.min.js"></script>
+    <title>Lionize Technologies Pvt. Ltd.</title>
+    <link rel="shortcut icon" type="image/jpg" href="NewLogo.png"/>
+    <style>
+        body {
+            background-color: #ff5851;
+            transition: 0.8s ease-in-out;
+        }
+    
+        .color-1, .color-2, .color-3, .color-4, .color-5 {
+            -webkit-transition: background-color 700ms linear;
+            -moz-transition: background-color 700ms linear;
+            -o-transition: background-color 700ms linear;
+            -ms-transition: background-color 700ms linear;
+            transition: background-color 700ms linear;
+        }
+        span.six {
+        background: black;
+        padding: 1px 20px;
+
+        }
+        @media only screen and (max-width: 600px) {
+        .mobile-height {
+          height: 338px;
+        }
+      }
+
+
+    </style>
+    <script>
+          $( window ).ready(function() {
+          
+          var wHeight = $(window).height();
+      
+          $('.slide')
+              .scrollie({
+              scrollOffset : -50,
+              scrollingInView : function(elem) {
+                          
+                  var bgColor = elem.data('background');
+                  
+                  $('body').css('background-color', bgColor);
+                  
+              }
+              });
+      
+          });
+      </script>
+      <script>
+        $(document).ready(function(){
+          $(window).scroll(function(){
+            $('1header').css('background-color', '#FF5851')
+          }),function(){
+            $('1header').css('background-color', 'transparent')
+          }
+        })
+      </script>
+ 
+</head>
+
+<body  style="background-image: url('option16-banner-bg.png') ; background-repeat: no-repeat; visibility: visible; animation-name: fadeIn;">
+  <div class="main-wrapper">
+    <div class="slide slide-one" data-background="#ff5851">
+      <div class="mt-4">
+        <header class="text-white body-font">
+            <div class="container mx-auto flex flex-wrap pl-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <a href="index.html" style="margin-bottom: 10px;"> <img src="NewLogo.png" width="90" height="100" alt=""> </a>  
+              </a>
+              <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Home</a>
+                <a href="services.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Services</a>
+                <a href="industries.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Industries</a>
+                <a href="products.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Products</a>
+                <a href="contact.html" class="mr-5 hover:text-black sm:text-lg md:text-xl lg:text-xl">Contact</a>
+              </nav>
+            </div>
+        </header>
+      </div>
+    </div>
+    <div class="slide slide-one" data-background="#ff5851">
+      <section class="text-gray-700 body-font">
+          <section class="text-white body-font">
+              <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                  <p class="lg:w-2/3 mx-auto leading-relaxed mb-2 text-sm">We provide best solutions ever</p>
+                  <h1 class="sm:text-5xl break-normal text-4xl title-font m2-4 text-white">Confined in a variety of
+                  <br/> <span class="six">IT INDUSTRIES</span> </h1>  
+                </div>
+                <div class="flex justify-center">
+                  <button class="text-white bg-transparent border border-solid border-white hover:bg-white hover:text-black font-medium uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button" style="transition: all .15s ease">
+                      Featured Works
+                    </button>
+              </div>
+              </div>
+            </section>
+            <section class="text-white body-font">
+              <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+              <div class="text-center lg:w-2/3 w-full">
+                  <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Lionize Versatiles in a huge range of IT Industries</h1>
+                  <p class="mb-8 leading-relaxed">Our Firm offers a wide range of services to our individual and business clients. Our clients benefit by getting personalized, quality service that is beyond comparison. To the right we have listed the services that we offer to our clients along with a brief description.</p>
+                  <div class="flex justify-center">
+                      <button class="text-white bg-transparent border border-solid border-white hover:bg-white hover:text-black font-medium uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button" style="transition: all .15s ease">
+                          Contact us
+                        </button> </div>
+                </div>
+              </div>
+            </section>
+      </section>
+      <section class="text-white body-font">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+              <h4 class="sm:text-2xl text-xl title-font mb-4 ">--- Industries we have Experienced with ---</h4>
+          </div>
+              <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/4 sm:w-1/2 p-4">
+                  <div class="flex relative bg-white">
+                    <img alt="gallery" class="absolute w-full pl-4 pt-4 object-cover object-center"  src="app-Dev.png" >
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 opacity-0 hover:opacity-100 mobile-height">
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Application Development</h1>
+                      <p class="leading-relaxed text-white">Our team expertise in creating a wide range of application including Web, Windows, cloud, Enterprise appplication etc</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 sm:w-1/2 p-4">
+                  <div class="flex relative bg-white">
+                    <img alt="gallery" class="absolute w-full pl-2 pt-4  object-cover object-center" src="educa.png">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 opacity-0 hover:opacity-100 mobile-height">
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Education</h1>
+                      <p class="leading-relaxed text-white">We have designed, developed and provided end to end E-Learning platform (studeor) for schools during this pandemic</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 sm:w-1/2 p-4">
+                  <div class="flex relative bg-white">
+                    <img alt="gallery" class="absolute w-full pl-4 pt-4 object-cover object-center" src="heatlh care.png">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 opacity-0 hover:opacity-100 mobile-height">
+                      <h1 class="title-font text-lg font-medium text-white mb-3">HealthCare</h1>
+                      <p class="leading-relaxed text-white">Our team expertise in crating an end to end hospital management system with the cloud database. Recently we launched our product HMS.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 sm:w-1/2 p-4">
+                  <div class="flex relative bg-white">
+                    <img alt="gallery" class="absolute w-3/4 pl-4 ml-6 pt-4 object-cover object-center" src="banki.png">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 opacity-0 hover:opacity-100 mobile-height">
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Banking</h1>
+                      <p class="leading-relaxed text-white">We offer end-to-end banking IT services in business areas such as Multi-channel/Core Banking, Loans and Financing, Payments etc.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 sm:w-1/2 p-4">
+                  <div class="flex relative bg-white">
+                    <img alt="gallery" class="absolute w-full pl-4 pt-6 object-cover object-center" src="data_manage.png">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 opacity-0 hover:opacity-100 mobile-height">
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Data Management</h1>
+                      <p class="leading-relaxed text-white">We have a track record that is well proven and offer end-to-end data management solutions to customers that are quite comprehensive.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 sm:w-1/2 p-4">
+                  <div class="flex relative bg-white">
+                    <img alt="gallery" class="absolute w-3/4 pl-6 ml-4 pt-6 object-cover object-center" src="manf.png">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 opacity-0 hover:opacity-100 mobile-height">
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Manufacturing</h1>
+                      <p class="leading-relaxed text-white">At Lionize, we offer 24/7 IT support for manufacturing companies, as well as project-based or fully managed IT services.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 sm:w-1/2 p-4">
+                  <div class="flex relative bg-white">
+                    <img alt="gallery" class="absolute w-full pl-4 pt-4 object-cover object-center" src="auto.png">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 opacity-0 hover:opacity-100 mobile-height">
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Automobile</h1>
+                      <p class="leading-relaxed text-white">We provide a wide range of solutions to automobile companies to improve productivity, product quality and worker safety.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 sm:w-1/2 p-4">
+                  <div class="flex relative bg-white">
+                    <img alt="gallery" class="absolute w-2/3 pl-6 ml-6 pt-8 object-cover object-center" src="retail.png">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 opacity-0 hover:opacity-100 mobile-height">
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Retail</h1>
+                      <p class="leading-relaxed text-white">
+                        We deliver scalable solutions that meet consumers' requirements, facilitate their enjoyable and secure shopping experience</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+    </div>
+    <div class="slide slide-one" data-background="#6B0990">
+      <div class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">You're one step closer to work with us</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-white">Drop your details below and we will connect with you in no time.</p>
+          </div>
+          <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0">
+            <input class="flex-grow w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mr-4 mb-4 sm:mb-0" placeholder="Full Name" type="text">
+            <input class="flex-grow w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mr-4 mb-4 sm:mb-0" placeholder="Email" type="email">
+            <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-one" data-background="#6B0990">
+      <footer class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+            <div class="lg:w-1/5 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">COMPANY</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-white hover:font-medium">About Us</a>
+                </li>
+                <li>
+                  <a class="text-white hover:font-medium">Leadership</a>
+                </li>
+                <li>
+                  <a class="text-white hover:font-medium">Testimonials</a>
+                </li>
+                <li>
+                  <a class="text-white hover:font-medium">Work with Us</a>
+                </li>
+              </nav>
+            </div>
+            
+              <div class="lg:w-1/5 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">OUR PRODUCTS</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a class="text-white hover:font-medium">HMS</a>
+                  </li>
+                  <li>
+                    <a class="text-white hover:font-medium">Purohit</a>
+                  </li>
+                  <li>
+                    <a class="text-white hover:font-medium">Studeor</a>
+                  </li>
+                  <li>
+                    <a class="text-white hover:font-medium">Upcoming Products</a>
+                  </li>
+                </nav>
+              </div>
+              <div class="lg:w-1/5 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">PARTNERS</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a class="text-white hover:font-medium">First Partner</a>
+                  </li>
+                  <li>
+                    <a class="text-white hover:font-medium">Second Partner</a>
+                  </li>
+                  <li>
+                    <a class="text-white hover:font-medium">Third Partner</a>
+                  </li>
+                  <li>
+                    <a class="text-white hover:font-medium">Fourth Partner</a>
+                  </li>
+                </nav>
+              </div>
+            <div class="lg:w-1/5 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">FAVORITES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-white hover:font-medium">What is HMS ?</a>
+                </li>
+                <li>
+                  <a class="text-white hover:font-medium">About Purohit</a>
+                </li>
+                <li>
+                  <a class="text-white hover:font-medium">What is Studeor ?</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/5 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium tracking-widest text-sm mb-3" style="color: #1EBBA3;">SOLUTIONS BY INDUSTRY</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-white hover:font-medium">Finance</a>
+                </li>
+                <li>
+                  <a class="text-white hover:font-medium">Technology</a>
+                </li>
+                <li>
+                  <a class="text-white hover:font-medium">Manufacturing</a>
+                </li>
+                <li>
+                  <a class="text-white hover:font-medium">Insurance</a>
+                </li>
+                <li>
+                  <a class="text-white hover:font-medium">Healthcare</a>
+                </li>
+                <li>
+                  <a class="text-white hover:font-medium">Education</a>
+                </li>
+                <li>
+                  <a class="text-white hover:font-medium">Human Resources</a>
+                </li>
+              </nav>
+            </div>
+    
+          </div>
+        </div>
+        <div class="border-t border-gray-200">
+          <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+            <div class="flex md:flex-no-wrap flex-wrap justify-center md:justify-start">
+              <input class="sm:w-64 w-40 bg-gray-100 rounded sm:mr-4 mr-2 border border-gray-400 focus:outline-none focus:border-purple-500 text-base py-2 px-4" placeholder="Email" type="text">
+              <button class="inline-flex text-white bg-purple-500 border-0 py-4 px-6 focus:outline-none hover:bg-purple-600 rounded">SEND</button>
+              <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">Drop your Email address
+                <br class="lg:block hidden">and we will contact you soon
+              </p>
+            </div>
+            
+            <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="bg-gray-200">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">lionize Technologies (P) ltd © 2019
+              <a href="https://twitter.com/lionizetech" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@lionizetech</a>
+            </p>
+            <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Let's create a new revolution together</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
